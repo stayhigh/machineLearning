@@ -1,4 +1,8 @@
-echo "Y"|sudo apt-get install -y build-essential python-dev python-setuptools \
+#install the sklearn module
+sudo apt-get install -y python-sklearn
+sudo apt-get install -y build-essential python-dev python-setuptools \
                      python-numpy python-scipy \
                      libatlas-dev libatlas3gf-base
-echo "Y"|sudo apt-get install -y python-sklearn
+
+#check the sklearn module
+nosetests -v sklearn
