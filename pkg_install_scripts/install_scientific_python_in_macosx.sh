@@ -18,17 +18,23 @@ pip install virtualenvwrapper
 pip install numpy
 brew install gfortran
 pip install scipy
-brew install freetype
+brew install freetype libpng pyqt
 pip install matplotlib
 pip install ipython
+
+#install python packages
+pip install tornado 
+brew install zeromq --universal
+pip install pyzmq
+pip install pygments
  
 # install the QT libraries as described 
 # in the text below before continuing
 brew install pyqt
 brew install zmq
-pip install pyzmq
-pip install pygments
 
 #check working properly
 brew update
 brew doctor
+pip install virtualenv
+pip install virtualenvwrapper
