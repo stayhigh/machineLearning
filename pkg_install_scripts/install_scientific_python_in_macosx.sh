@@ -23,6 +23,21 @@ brew install freetype libpng pyqt
 pip install matplotlib
 pip install ipython
 
+#for iptest no error report
+pip install Jinja2 #jinja2 for ipython notebook
+brew install casperjs 
+pip install  cython oct2py pymongo requests sphinx
+pip install rpy2
+brew tap homebrew/science
+brew install gcc
+
+#install R tools on Mac OSX
+wget -c http://r.research.att.com/mavericks/R-3.1-branch/R-3.1-branch-mavericks.pkg
+sudo installer -verbose -pkg "R-3.1-branch-mavericks.pkg" -target / # install .pkg file
+#if install Caskroom properly and then install octave
+brew install Caskroom/cask/java &&  brew install octave 
+
+
 #install python packages
 pip install tornado 
 brew install zeromq --universal
