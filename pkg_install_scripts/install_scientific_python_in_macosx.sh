@@ -6,7 +6,8 @@ if test echo $PATH|tr -s ':' '\n'|grep -x -c /usr/local/bin
 then
 	echo '/usr/local/bin is already in PATH.'
 else
-	echo "export PATH=/usr/local/bin:\$PATH" >> ~/.bash_profile
+	echo "=> export PATH=/usr/local/bin:$PATH"
+	export PATH=/usr/local/bin:$PATH
 	echo "reload the bash profile ..."
 	source ~/.bash_profile
 fi
