@@ -2,6 +2,7 @@
 export PATH=/usr/local/bin:$PATH
 alias py='python'
 alias rb='ruby'
+alias grep="grep --color"
 
 #color the shell
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
