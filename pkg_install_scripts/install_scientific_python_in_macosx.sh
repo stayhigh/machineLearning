@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#check if the brew is installed.
+brew 
+if [ "$?" -nq 0 ]
+then
+    exit(1)
+fi
 
 #[[ .. ]] is equivalent to 'test' command 
 if test echo $PATH|tr -s ':' '\n'|grep -x -c /usr/local/bin 
